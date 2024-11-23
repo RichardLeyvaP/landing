@@ -1,0 +1,138 @@
+<template>
+  <v-container>
+    <!-- Sección que detecta el scroll -->
+    <div class="landing-section" :class="{ 'has-scrolled': hasScrolled }" ref="landingSection">
+      <div class="content-container">
+        <!-- Texto a la izquierda como llamada a la acción -->
+        <div class="call-to-action">
+          <h1>Descubre la Magia</h1>
+          <p>Explora nuestras increíbles colecciones y dale vida a tu hogar con estilo.</p>
+          <v-btn color="primary" class="cta-button">¡Empieza ahora!</v-btn>
+        </div>
+
+        <!-- Contenedor de imágenes superpuestas a la derecha -->
+        <div class="image-container">
+          <!-- Imagen 1 (entra desde la izquierda) -->
+          <img src="https://via.placeholder.com/200" alt="Imagen 1" class="animated-image image-1" />
+
+          <!-- Imagen 2 (entra desde la derecha y superpuesta) -->
+          <img src="https://via.placeholder.com/200" alt="Imagen 2" class="animated-image image-2" />
+
+          <!-- Imagen 3 (entra desde abajo y superpuesta) -->
+          <img src="https://via.placeholder.com/200" alt="Imagen 3" class="animated-image image-3" />
+        </div>
+      </div>
+    </div>
+  </v-container>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      hasScrolled: false, // Controla si el usuario ha hecho scroll a la sección
+    };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.checkScroll); // Detecta el scroll
+  },
+  methods: {
+    checkScroll() {
+      const section = this.$refs.landingSection;
+      const sectionTop = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (sectionTop < windowHeight - 100) {
+        // Si la parte superior de la sección está visible, activar la animación
+        this.hasScrolled = true;
+        window.removeEventListener("scroll", this.checkScroll); // Dejar de escuchar el scroll
+      }
+    },
+  },
+};
+</script>
+
+<style scoped>
+/* Contenedor de la sección de contenido (texto + imágenes) */
+.content-container {
+  display: flex;
+  justify-content: space-between; /* Alinear el texto y las imágenes */
+  align-items: center; /* Alinear verticalmente */
+  height: 500px;
+}
+
+/* Estilos de la llamada a la acción */
+.call-to-action {
+  flex: 1;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.call-to-action h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.call-to-action p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+/* Estilo base del contenedor de imágenes */
+.image-container {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo base de las imágenes (inicialmente ocultas y fuera de la pantalla) */
+.animated-image {
+  position: absolute;
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/* Imágenes entrando desde diferentes direcciones */
+.image-1 {
+  transform: translateX(-200%);
+  z-index: 3; /* Mayor prioridad, aparece sobre las otras */
+}
+
+.image-2 {
+  transform: translateX(200%);
+  z-index: 2; /* Aparece debajo de la imagen 1 */
+}
+
+.image-3 {
+  transform: translateY(200%);
+  z-index: 1; /* Aparece debajo de las otras dos */
+}
+
+/* Cuando se hace scroll, las imágenes se animan y aparecen */
+.has-scrolled .animated-image {
+  opacity: 1;
+}
+
+.has-scrolled .image-1 {
+  
+  transform: translateY(-25px);
+  transform: translateX(-20px); /* Desplazar un poco a la izquierda */
+}
+
+.has-scrolled .image-2 {
+  
+  transform: translateX(50px); /* Desplazar un poco a la derecha */
+}
+
+.has-scrolled .image-3 {
+  transform: translateY(50px); /* Desplazar un poco hacia abajo */
+}
+</style>
