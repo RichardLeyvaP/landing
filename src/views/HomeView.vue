@@ -121,7 +121,8 @@ export default {
           text2:'Eres',
           text3:'El',
           text4:'Rey',
-          backgroundColor:'rgba(0, 0, 0, 0.7)',
+          backgroundColor:'#131313',
+          // backgroundColor:'rgba(0, 0, 0, 0.7)',
           backgroundColor2: '#ec9b27', // Amarillo quemado
           backgroundImage: b1,
          // backgroundCard: b4,
@@ -131,13 +132,13 @@ export default {
           cardHeight: 700, // Altura del ard
         },
         {
-          title: 'Locales',
+          title: 'Salones',
           text1:'A',
           text2:'tu',
-          text3:'Al',
-          text4:'tura',
-          // backgroundColor:"#859c63",
-          backgroundColor:'#332109',
+          text3:'Alt',
+          text4:'ura',
+           backgroundColor:"#010101",
+         // backgroundColor:'#332109',
           backgroundColor2: '#ec9b27', 
           //backgroundCard: b5,
            backgroundImage: b2, // Reemplaza con tu imagen

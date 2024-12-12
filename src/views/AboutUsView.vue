@@ -14,8 +14,16 @@
 
       <!-- Texto sobre el banner -->
       <div class=" ">
-        <h1 class="fadeInRight1 text-white text-h2 font-weight-bold fade-in text-left"><p>DON </p></h1>
-        <h1 class="fadeInRight2 text-white text-h2 font-weight-bold fade-in text-left"><p>HERNÁNDEZ </p></h1>
+        <!-- <h1 class="fadeInRight1 text-white text-h2 font-weight-bold fade-in text-left"><p> </p></h1>
+        <h1 class="fadeInRight2 text-white text-h2 font-weight-bold fade-in text-left"><p>HERNÁNDEZ </p></h1> -->
+        <h2  class="fadeInRight1 fade-in fadeInRight raleway-font text-h2 text-justify text-uppercase font-weight-black mobile-yellow"
+    style="color: #ffffff; line-height: 0.9; font-size: 3.6rem;">
+    DON
+      </h2>
+        <h1  class="fadeInRight2 fade-in fadeInRight raleway-font text-h1 text-justify text-uppercase font-weight-black mobile-yellow"
+    style="color: #ec9b27; line-height: 0.9; font-size: 3.5rem;">
+    HERNÁNDEZ
+      </h1>
         
       </div>
     </div>

@@ -5,12 +5,27 @@
       <v-col cols="12" class="px-0">
         <v-img
         
-        src="@/assets/b1.png"
+        src="@/assets/banner/b3.jpg"
         alt="Banner"
           class="banner"
           cover
           
         ></v-img>
+        <!-- Texto sobre el banner -->
+      <div class=" ">
+
+        <h2  class="fadeInRight1 fade-in fadeInRight raleway-font text-h2 text-justify text-uppercase font-weight-black mobile-yellow"
+    style="color: #ffffff; line-height: 0.9; font-size: 3.6rem;">
+    Nuestros
+      </h2>
+        <h1  class="fadeInRight2 fade-in fadeInRight raleway-font text-h1 text-justify text-uppercase font-weight-black mobile-yellow"
+    style="color: #ec9b27; line-height: 0.9; font-size: 3.5rem;">
+    Servicios
+      </h1>
+        <!-- <h1 class="fadeInRight1 text-white text-h2 font-weight-bold fade-in text-left" style="color: #ffffff; line-height: 0.9; font-size: 3.5rem;"><p>DON </p></h1>
+        <h1 class="fadeInRight2 text-white text-h2 font-weight-bold fade-in text-left" style="color: #ffffff; line-height: 0.9; font-size: 3.5rem;"><p>HERNÁNDEZ </p></h1>
+         -->
+      </div>
        
       </v-col>
     </v-row>
@@ -305,6 +320,58 @@
     }
   };
   </script>
+
+
+
+<style scoped>
+.fade-in {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fadeInRight1 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  animation: fadeInRight 2.9s forwards;
+}
+
+@keyframes fadeInRight1 {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fadeInRight2 {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  animation: fadeInRight 3.5s forwards;
+}
+
+@keyframes fadeInRight2 {
+  0% {
+    opacity: 0;
+    transform: translateX(180px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+</style>
   
   <style>
  .custom-height {
