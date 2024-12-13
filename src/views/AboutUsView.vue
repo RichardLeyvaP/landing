@@ -16,9 +16,10 @@
       <div class=" ">
         <!-- <h1 class="fadeInRight1 text-white text-h2 font-weight-bold fade-in text-left"><p> </p></h1>
         <h1 class="fadeInRight2 text-white text-h2 font-weight-bold fade-in text-left"><p>HERNÁNDEZ </p></h1> -->
-        <h2  class="fadeInRight1 fade-in fadeInRight raleway-font text-h2 text-justify text-uppercase font-weight-black mobile-yellow"
+      
+      <h2  class="fadeInRight1 fade-in fadeInRight raleway-font text-h2 text-justify text-uppercase font-weight-black mobile-yellow"
     style="color: #ffffff; line-height: 0.9; font-size: 3.6rem;">
-    DON
+    Barbería
       </h2>
         <h1  class="fadeInRight2 fade-in fadeInRight raleway-font text-h1 text-justify text-uppercase font-weight-black mobile-yellow"
     style="color: #ec9b27; line-height: 0.9; font-size: 3.5rem;">
@@ -48,11 +49,12 @@
   >
     <!-- Contenido dentro del card -->
     <v-card-text class="text-h7 text-justify fade-in" style="font-family: 'Helvetica', sans-serif; font-weight: 400;">
-        
-       <strong> Don Hernández</strong> es un salón pensado para los niños, jóvenes y adultos de la casa, que buscan ser atendidos y lucir como un Rey. <br><br> Nuestra temática adaptada a un reino moderno,permite que vivan dicha experiencia.
-       <br><br>Además tenemos servicios de cortesía como café capuchino, chocolate, entre otras
-          bebidas calientes y un sistema de registro que facilita la atención de los clientes siendo la barbería donde menos tiempo esperarás a tu barbero.
-
+      <span class="text-h3  font-weight-black text-uppercase text-brown-darken-4 d-block fade-in">Historia</span>
+        Fundada en 2019 por los hermanos Hernández jóvenes emprendedores con un
+          deseo ardiente de emprender, fueron en busca de la excelencia educándose con los
+          mejores exponentes a nivel nacional e internacional, de esta manera lograron definir su
+          estilo y concepto del salón la cual permite adaptar un reino moderno para nuestros
+          clientes.
     </v-card-text>
   </v-card>
  
@@ -155,21 +157,6 @@
   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <section id="about" class="section">
 
 
@@ -185,24 +172,11 @@
   >
 
 
-  <!-- <v-card
-  max-width="400"
-  class="pa-0 mr-8 transparent-card hover-card"
-  elevation="0"
->
-  <v-img
-    src="@/assets/admin/image-bh-admin1.png"
-    class="hover-image"
-    height="320"
-    width="320"
-  ></v-img>
-</v-card> -->
 
 <v-card
     max-width="400"
     class="pa-0 mr-8 transparent-card hover-card"
     elevation="0"
-    @mouseenter="createConfetti"
   >
     <v-img
       src="@/assets/admin/image-bh-admin1.png"
@@ -210,13 +184,12 @@
       height="320"
       width="320"
     ></v-img>
-    <div class="confetti" ref="confetti"></div> <!-- Elemento para el confeti -->
   </v-card>
 
 
     <v-card
       max-width="200"
-      class="pa-4 transparent-card"
+      class="pa-0 transparent-card"
       elevation="0"
     >
       <!-- Contenido dentro del card -->
@@ -240,27 +213,28 @@
     style="padding: 0"
   >
   
-  
+ 
+  <br>
+  <br>
+
+
     <div class="text-black text-justify ma-8"> <!-- Ajuste aquí con margen externo -->
       
-      <span class="text-h3  font-weight-black text-uppercase text-brown-darken-4 d-block fade-in">Historia</span>
+      <span class="text-h3  font-weight-black text-uppercase text-brown-darken-4 d-block fade-in">Misión</span>
       
       
       <p class="text-justify  text-h7 pr-16 fade-in" style="font-family: 'Helvetica', sans-serif; font-weight: 400;">
-        Fundada en 2019 por los hermanos Hernández jóvenes emprendedores con un
-          deseo ardiente de emprender, fueron en busca de la excelencia educándose con los
-          mejores exponentes a nivel nacional e internacional, de esta manera lograron definir su
-          estilo y concepto del salón la cual permite adaptar un reino moderno para nuestros
-          clientes.
-      </p>
-      <br>
-      <span class="text-h3  font-weight-black text-uppercase text-brown-darken-4 d-block fade-in">Misión</span>
-      <p class="text-justify text-h7 pr-16 fade-in" style="font-family: 'Helvetica', sans-serif; font-weight: 400;">
         Brindar una experiencia de belleza única para hombres, donde cada cliente se sienta como un rey.
          Nuestro enfoque es crear un ambiente exclusivo y sistematizado que va más allá de un simple corte de cabello,
           ofreciendo una atención de calidad en cada visita.
       </p>
       <br>
+      <span class="text-h3  font-weight-black text-uppercase text-brown-darken-4 d-block fade-in">Visión</span>
+      <p class="text-justify text-h7 pr-16 fade-in" style="font-family: 'Helvetica', sans-serif; font-weight: 400;">
+        Ser la cadena de barberías líder en Chile, reconocida por elevar la autoestima de los hombres,
+             haciéndolos sentir exclusivos y cuidados. Aspiramos a tener franquicias en cada ciudad del país,
+              con un equipo operativo y administrativo sólido que permita expandir nuestra experiencia única a todo Chile.
+      </p>
       <br>
       <br>
       <br>
@@ -273,39 +247,7 @@
 
 </section>
 
-
-
-<v-container fluid class="d-flex justify-center pb-2 pt-0 ">
-    <v-row class="d-flex justify-center">
-      <v-col cols="12" md="8" class="position-relative">
-        <!-- Título superpuesto alineado a la izquierda -->
-
-        <!-- Card que ajusta su altura automáticamente -->
-        <v-card class="yellow-card elevation-3 mx-auto card-content fade-in" max-width="1000">
-          <v-container >
-          <v-card-text class="text-brown-darken-4 text-justify  text-h7" style="font-family: 'Helvetica', sans-serif; font-weight: 800;"><!-- Cambiado el color del texto -->
-            <p class="text-justify text-h7 pr-16 fade-in" style="font-family: 'Helvetica', sans-serif; font-weight: 400;">
-     
-            Ser la cadena de barberías líder en Chile, reconocida por elevar la autoestima de los hombres,
-             haciéndolos sentir exclusivos y cuidados. Aspiramos a tener franquicias en cada ciudad del país,
-              con un equipo operativo y administrativo sólido que permita expandir nuestra experiencia única a todo Chile.
-            </p>
-            </v-card-text>
-        </v-container>
-        </v-card>
-        
-        <span class="title-over-card text-h3 text-brown-darken-4 d-block font-weight-black text-uppercase fade-in">
-          Visión
-        </span>
-      </v-col>
-      
-    </v-row>
-  </v-container>
   <br>
-  <br>
-  <br>
-  <br>
-
 </template>
 
 <script>
@@ -388,40 +330,9 @@ onMounted(() => {
   },
 
  methods: {
-  createConfetti() {
-      for (let i = 0; i < 50; i++) { // Ajusta el número de piezas de confeti aquí
-        this.createConfettiPiece();
-      }
-    },
-    createConfettiPiece() {
-  const piece = document.createElement('div');
-  piece.className = 'piece';
-  piece.style.left = Math.random() * 100 + '%'; // Posición horizontal aleatoria
-  piece.style.top = Math.random() * -50 + '%'; // Posición vertical aleatoria, iniciando más arriba
-  piece.style.backgroundColor = this.getRandomColor();
-  piece.style.width = `${Math.random() * 10 + 5}px`; // Ancho aleatorio entre 5px y 15px
-  piece.style.height = `${Math.random() * 10 + 5}px`; // Alto aleatorio entre 5px y 15px
-  piece.style.position = 'absolute';
-  piece.style.opacity = 1;
+  
+   
 
-  this.$refs.confetti.appendChild(piece);
-
-  // Animación de caída
-  piece.animate([
-    { transform: 'translateY(0)', opacity: 1 },
-    { transform: `translateY(300px) rotate(720deg)`, opacity: 0 }, // Caída más pronunciada
-  ], {
-    duration: 2500,
-    easing: 'ease-in-out',
-    fill: 'forwards'
-  });
-
-  // Eliminar la pieza de confeti después de la animación
-  setTimeout(() => {
-    piece.remove();
-  }, 3000);
-}
-,
     getRandomColor() {
       const colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'pink'];
       return colors[Math.floor(Math.random() * colors.length)];
@@ -472,6 +383,16 @@ onMounted(() => {
 </script>
 
 <style scoped>
+@media (max-width: 768px) {
+  h2.fadeInRight1{
+    font-size: 2.8rem !important; /* Sobrescribe cualquier estilo en línea */
+    line-height: 0.2 !important;
+  }
+  h1.fadeInRight2 {
+    font-size: 3.4rem !important; /* Sobrescribe cualquier estilo en línea */
+    line-height: 0.2 !important;
+  }
+}
 .banner-container {
   position: relative;
   width: 100%;
@@ -553,14 +474,11 @@ onMounted(() => {
   color: white;
 }
 .style-card-3 {
-  background-color: #00356d
-  ;
-  color: white;
+  background-color: #ec9b27; /* Color amarillo (quemado) */
+  color: #4E3B31; /* Color marrón oscuro para el texto */
 }
 .style-card-4 {
-  background-color: #859c63
-
-  ;
+  background-color: white;
   color: black;
 }
 /* Animaciones infinitas en distintas direcciones */
@@ -823,15 +741,7 @@ height: 500px; /* Altura por defecto para pantallas grandes */
   filter: brightness(1.2); /* Opcional: aclara la imagen al pasar el mouse */
 }
 
-.confetti {
-  position: absolute; /* Posición absoluta para que cubra el card */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* No intercepta eventos del mouse */
-  overflow: hidden; /* Para asegurarte de que el confeti no se desborde */
-}
+
 
 .piece {
   position: absolute;

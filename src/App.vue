@@ -6,7 +6,7 @@
       <v-toolbar-title style="max-height: auto;">
         <router-link to="/">
   <v-img
-    src="@/assets/logo.png"
+    src="@/assets/LOGOS/LOGOS/BARBERIAtransparente.png"
     alt="Logo de la barbería"
     class="logo-responsive"
     contain

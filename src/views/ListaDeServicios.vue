@@ -15,14 +15,15 @@
       <div class=" ">
 
         <h2  class="fadeInRight1 fade-in fadeInRight raleway-font text-h2 text-justify text-uppercase font-weight-black mobile-yellow"
-    style="color: #ffffff; line-height: 0.9; font-size: 3.6rem;">
+    style="color: #ffffff; line-height: 1.9; font-size: 3.6rem;">
     Nuestros
       </h2>
         <h1  class="fadeInRight2 fade-in fadeInRight raleway-font text-h1 text-justify text-uppercase font-weight-black mobile-yellow"
-    style="color: #ec9b27; line-height: 0.9; font-size: 3.5rem;">
+    style="color: #ec9b27; line-height: 1.9; font-size: 3.5rem;">
     Servicios
       </h1>
-        <!-- <h1 class="fadeInRight1 text-white text-h2 font-weight-bold fade-in text-left" style="color: #ffffff; line-height: 0.9; font-size: 3.5rem;"><p>DON </p></h1>
+      
+        <!-- <h1 class="fadeInRight1 text-white text-h2 font-weight-bold fade-in text-left" style="color: #ffffff; line-height: 0.9; font-size: 3.5rem;"><p>Barbería </p></h1>
         <h1 class="fadeInRight2 text-white text-h2 font-weight-bold fade-in text-left" style="color: #ffffff; line-height: 0.9; font-size: 3.5rem;"><p>HERNÁNDEZ </p></h1>
          -->
       </div>
@@ -313,8 +314,11 @@
             }
           })
           .then((response) => {
-            this.services = response.data.services;
-            console.log(this.services)
+           // Filtrar solo los servicios donde show_service es 1
+      this.services = response.data.services.filter(service => service.show_service === 1);
+      console.log(this.services);
+            // this.services = response.data.services;
+            // console.log(this.services)
           });
       },
     }
@@ -324,6 +328,18 @@
 
 
 <style scoped>
+
+@media (max-width: 768px) {
+  h2.fadeInRight1{
+    font-size: 3rem !important; /* Sobrescribe cualquier estilo en línea */
+    line-height: 0 !important;
+  }
+  h1.fadeInRight2 {
+    font-size: 3.8rem !important; /* Sobrescribe cualquier estilo en línea */
+    line-height: 0 !important;
+  }
+}
+
 .fade-in {
   opacity: 0;
   transform: translateY(35px);
