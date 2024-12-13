@@ -204,13 +204,7 @@ Historia de Barbería Hernández
 
 
 
-<v-row class="pb-8 mt-12" 
-style="
- background-image: url('src/assets/banner/b1.jpg');
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-">
+<v-row class="pb-8 mt-12 banner-row">
 <v-container>
   <v-row class="ml-2">
     <v-col cols="12" class="pa-0 ma-0" md="6">
@@ -376,6 +370,14 @@ if (!this.reached30cm && sectionTop < windowHeight - 1340) {
 
 <!-- ccs de la parte de la historia -->
 <style scoped>
+/* styles.css */
+.banner-row {
+  background-image: url('@/assets/banner/b1.jpg');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* Estilos para dispositivos móviles (hasta 600px) */
 @media (max-width: 600px) {
 .mobile-yellow {

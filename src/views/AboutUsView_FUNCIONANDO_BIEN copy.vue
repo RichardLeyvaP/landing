@@ -136,7 +136,7 @@
       
       
       <p>
-        Fundada ****en 2019 por los hermanos Hernández jóvenes emprendedores con un
+        Fundada en 2019 por los hermanos Hernández jóvenes emprendedores con un
           deseo ardiente de emprender, fueron en busca de la excelencia educándose con los
           mejores exponentes a nivel nacional e internacional, de esta manera lograron definir su
           estilo y concepto del salón la cual permite adaptar un reino moderno para nuestros

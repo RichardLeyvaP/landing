@@ -1,7 +1,10 @@
 /* src/assets/preloader.css */
+
 #app:before {
-    content: "";
-    transform: translate(-50%, -50%);
-    background: url('src/assets/landing-icon3.jpg') no-repeat center center;
-    background-size: contain;
-  }
+  content: "";
+  transform: translate(-50%, -50%);
+  background-image: url('@/assets/landing-icon3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

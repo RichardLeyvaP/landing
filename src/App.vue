@@ -1,21 +1,21 @@
-<template>prepend-icon="$vuetify"
+<template>
 
+  LA ACTUAL QUE ESTABA
+  
   <v-app style="background-color: #e4e1d9">
     <v-app-bar color="#e4e1d9" elevation="12">
       <v-app-bar-nav-icon @click="drawer = !drawer" class=""></v-app-bar-nav-icon>
-      <v-toolbar-title style="max-height: auto;">
+     
         <router-link to="/">
-  <v-img
+  <img
     src="@/assets/LOGOS/LOGOS/BARBERIAtransparente.png"
     alt="Logo de la barbería"
     class="logo-responsive"
-    contain
-  ></v-img>
+  />
+ 
 </router-link>
 
-      </v-toolbar-title>
-
-      <v-spacer></v-spacer>
+      
 
       <v-btn size="small" variant="plain" href="https://reservasbh.simplifies.cl" class=" font-weight-bold text-capitalize d-none d-md-flex">RESERVAS</v-btn>
       <v-btn size="small" variant="plain" to="/servicios" class="font-weight-bold text-capitalize d-none d-md-flex">SERVICIOS</v-btn>
@@ -36,7 +36,7 @@
         </v-list>
       </v-menu>
 
-      <v-spacer></v-spacer>
+     
 
       <v-btn icon size="small" density="comfortable" class="ml-2" href="https://www.instagram.com/barberiahernandeztv/" target="_blank">
         <v-icon>mdi-instagram</v-icon>
@@ -169,15 +169,10 @@ body {
 }
 
 .logo-responsive {
-  width: 200px; /* Tamaño por defecto para escritorio */
- 
+  height: 180px !important;
+  width: auto !important;
+  
 }
 
-/* Ajuste de tamaño para pantallas móviles */
-@media (max-width: 600px) {
-  .logo-responsive {
-    width: 400px; /* Tamaño mayor para pantallas móviles */
-    height: 400px;
-  }
-}
+
 </style>

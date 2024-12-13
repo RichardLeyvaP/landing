@@ -352,7 +352,7 @@
 }
 .fadeInRight1 {
   position: absolute;
-  top: 5%;
+  top: 3%;
   left: 5%;
   animation: fadeInRight 2.9s forwards;
 }
@@ -369,7 +369,7 @@
 }
 .fadeInRight2 {
   position: absolute;
-  top: 7%;
+  top: 4%;
   left: 5%;
   animation: fadeInRight 3.5s forwards;
 }

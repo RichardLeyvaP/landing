@@ -5,7 +5,6 @@ import HomeView from '../views/HomeView.vue';
 import BranchesView from '../views/BranchesView.vue';
 import ListaDeServicios from '../views/ListaDeServicios.vue';
 import ListaDeCursos from '../views/ListaDeCursos.vue';
-//import LoginPage from '../components/LoginPage.vue';
 import AboutUsView from '../views/AboutUsView.vue';
 import StudentView from '@/views/StudentView.vue';
 import DisplayView from '@/views/DisplayView.vue';
@@ -22,7 +21,6 @@ const routes = [
     name: 'display',
     component: DisplayView,
   },
-  
   {
     path: '/student',
     name: 'student',
@@ -44,7 +42,6 @@ const routes = [
     name: 'sucursales',
     component: BranchesView,
   },
-  
   {
     path: '/cursos',
     name: 'cursos',
@@ -53,11 +50,17 @@ const routes = [
   // Aquí puedes agregar más rutas según sea necesario
 ];
 
+// Configura el router
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+  scrollBehavior() {
+    // Siempre vuelve al inicio de la página al navegar
+    return { top: 0 };
+  },
 });
 
+// Middleware de navegación
 router.beforeEach((to, from, next) => {
   next();
 });
