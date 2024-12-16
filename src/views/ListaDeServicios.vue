@@ -211,7 +211,9 @@
 
   
   
-  
+  <div id="servicios-seccion">
+    <!-- Contenido de la sección de servicios -->
+
     <v-container class="pt-0" >
       <v-row  >
         
@@ -252,6 +254,7 @@
         </v-col>
       </v-row>
     </v-container>
+  </div>
   </template>
   
   <script>

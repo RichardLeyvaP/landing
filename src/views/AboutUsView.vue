@@ -168,7 +168,7 @@
     sm="6"
     
     
-    class="justify-center align-center pa-2 pt-16 fade-in d-flex"
+    class="justify-center   fade-in d-flex"
     style="background-color: #e4e1d9"
   >
 
@@ -215,11 +215,10 @@
   >
   
  
-  <br>
-  <br>
+ 
 
 
-    <div class="text-black text-justify ma-0 ml-12"> <!-- Ajuste aquí con margen externo -->
+    <div class="text-black text-justify ma-0  ml-12"> <!-- Ajuste aquí con margen externo -->
       
       <span class="text-h3  font-weight-black text-uppercase text-brown-darken-4 d-block fade-in">Misión</span>
       

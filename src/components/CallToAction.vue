@@ -15,9 +15,9 @@
 
 
   <v-row class="pb-8 mt-12 pl-8"  style="background-color: #ec9b27">
-  <v-container>
-    <v-row>
-    <v-col cols="12" class="pa-0 ma-0" md="6">
+
+    <v-row class="ml-6 mr-6">
+    <v-col cols="12" class=" " md="6">
       <br>
       <br>
     <br>
@@ -84,7 +84,7 @@
       
 
       <!-- Contenedor de imágenes superpuestas a la derecha -->
-      <div class="image-container">
+      <div class="image-container ">
 <!-- Imagen 1 (entra desde la izquierda) -->
 <img src="@/assets/places/apk.png" width="120" alt="Imagen 1" class="animated-image image-1" />
 
@@ -100,7 +100,7 @@
   </div>
   </v-col>
 </v-row>
-</v-container>
+
   </v-row>
 
 
@@ -119,7 +119,7 @@
 
       <v-row class="pt-8">
 <!-- Columna izquierda con el fondo y el texto -->
-<v-col cols="12" sm="6" class="pa-0 ma-0 position-relative " md="4"  style="background-color: #ec9b27;">
+<v-col cols="12" sm="6" class="pa-0 ma-0 position-relative " md="6"  style="background-color: #ec9b27;">
   <div class="px-8 d-flex flex-column " 
     style="position: absolute; top: 0; left: 0; 
       transform: translateY(10%);" 
@@ -210,7 +210,7 @@ Historia de Barbería Hernández
     <v-col cols="12" class="pa-0 ma-0" md="6">
       <br><br>
       <v-container>
-        <div class="call-to-action pl-8">
+        <div class="call-to-action pl-0">
           <p>
             <span>
               <h1 class="raleway-font text-h3 text-uppercase font-weight-black animated-text2" :class="{ 'slide-in': textMovBottom }" style="color: #ffffff">Corte de cabello</h1>
@@ -237,16 +237,17 @@ Historia de Barbería Hernández
 <!-- Botón con superposición -->
 
 <v-btn 
-:ripple="true" 
-class="action-overlay services-button animated-textBot" 
-:class="{ 'slide-in': textMovBottom }" 
-height="72"
-min-width="164" 
-style="font-weight: bold; color: #000000;"  
-to="/servicios"
+    :ripple="true" 
+    class="action-overlay services-button animated-textBot" 
+    :class="{ 'slide-in': textMovBottom }" 
+    height="72"
+    min-width="164" 
+    style="font-weight: bold; color: #000000;"  
+    to="/servicios#servicios-seccion"
 >
-Descubre todos los servicios
+    Descubre todos los servicios
 </v-btn>
+
 
           
 
@@ -373,7 +374,7 @@ if (!this.reached30cm && sectionTop < windowHeight - 1340) {
 /* styles.css */
 .banner-row {
   background-image: url('@/assets/banner/b1.jpg');
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -400,18 +401,18 @@ if (!this.reached30cm && sectionTop < windowHeight - 1340) {
 <style scoped>
 .action-overlay {
 position: absolute;
-bottom: 860px; /* Ajusta este valor para bajarlo */
-left: 20%;
+bottom: 1450px; /* Ajusta este valor para bajarlo */
+left: 71% !important;
 
 background-color: #ec9b27;
-padding: 10px 20px;
+padding: 10px 16px;
 border-radius: 2px;
 transition: transform 3s ease, opacity 3s ease; /* Añade una transición para suavizar */
 }
 
 @media (max-width: 600px) {
 .action-overlay {
-  left: 0%;
+  left: 50% !important;
   bottom: 1600px; /* Ajusta para móviles */
   padding: 8px 16px;
 }
@@ -557,6 +558,7 @@ flex: 1;
 height: 100%;
 display: flex;
 align-items: center;
+padding-right: 42%;
 flex-direction: column; /* Cambio a columna para apilar las imágenes */
 z-index: 0;
 }

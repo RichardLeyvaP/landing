@@ -54,10 +54,17 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-  scrollBehavior() {
-    // Siempre vuelve al inicio de la página al navegar
-    return { top: 0 };
-  },
+  scrollBehavior(to) {
+    if (to.hash) {
+        return {
+            el: to.hash,
+            behavior: 'smooth', // Desplazamiento suave
+        };
+    } else {
+        return { top: 0 }; // Volver al inicio si no hay hash
+    }
+}
+,
 });
 
 // Middleware de navegación
